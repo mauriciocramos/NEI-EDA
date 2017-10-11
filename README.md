@@ -1,7 +1,6 @@
 NEI-EDA
 ================
 by Maurício Collaça
-on 2017-10-10
 
 US Environmental Protection Agency (EPA) - National Emission Inventory (NEI) - Exploratory Data Analysis
 --------------------------------------------------------------------------------------------------------
