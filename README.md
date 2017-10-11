@@ -1,7 +1,7 @@
 NEI-EDA
 ================
 by Maurício Collaça
-on 2017-03-04
+on 2017-10-10
 
 US Environmental Protection Agency (EPA) - National Emission Inventory (NEI) - Exploratory Data Analysis
 --------------------------------------------------------------------------------------------------------
@@ -21,8 +21,7 @@ destfile = 'NEI_data.zip'
 if(!file.exists(destfile)) {
     download.file(url, destfile, mode = "wb", cacheOK = FALSE)    
 }
-if (!(file.exists("Source_Classification_Code.rds") &
-      file.exists("summarySCC_PM25.rds"))) {
+if (!file.exists("Source_Classification_Code.rds") | !file.exists("summarySCC_PM25.rds")) {
     unzip(destfile, setTimes = TRUE)
 }
 ```
@@ -102,7 +101,7 @@ Have total emissions from PM2.5 decreased in the United States from 1999 to 2008
 source("plot1.R")
 ```
 
-![](README_files/figure-markdown_github/plot1-1.png)
+![](README_files/figure-markdown_github-ascii_identifiers/plot1-1.png)
 
 ### Question 2
 
@@ -112,7 +111,7 @@ Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips 
 source("plot2.R")
 ```
 
-![](README_files/figure-markdown_github/plot2-1.png)
+![](README_files/figure-markdown_github-ascii_identifiers/plot2-1.png)
 
 ### Question 3
 
@@ -122,7 +121,7 @@ Of the four types of sources indicated by the type (point, nonpoint, onroad, non
 source("plot3.R")
 ```
 
-![](README_files/figure-markdown_github/plot3-1.png)
+![](README_files/figure-markdown_github-ascii_identifiers/plot3-1.png)
 
 ### Question 4
 
@@ -132,7 +131,7 @@ Across the United States, how have emissions from coal combustion-related source
 source("plot4.R")
 ```
 
-![](README_files/figure-markdown_github/plot4-1.png)
+![](README_files/figure-markdown_github-ascii_identifiers/plot4-1.png)
 
 ### Question 5
 
@@ -142,7 +141,7 @@ How have emissions from motor vehicle sources changed from 1999–2008 in Baltim
 source("plot5.R")
 ```
 
-![](README_files/figure-markdown_github/plot5-1.png)
+![](README_files/figure-markdown_github-ascii_identifiers/plot5-1.png)
 
 ### Question 6
 
@@ -152,4 +151,4 @@ Compare emissions from motor vehicle sources in Baltimore City with emissions fr
 source("plot6.R")
 ```
 
-![](README_files/figure-markdown_github/plot6-1.png)
+![](README_files/figure-markdown_github-ascii_identifiers/plot6-1.png)
