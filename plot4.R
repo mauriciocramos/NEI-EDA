@@ -1,3 +1,6 @@
+## Author: Maurício Collaça
+## date: 2017-10-10
+
 ## Across the United States, how have emissions from coal combustion-related
 ## sources changed from 1999–2008?
 
